@@ -1,0 +1,12 @@
+.cena1 {
+  position: absolute;       /* mantém o canvas dentro do fluxo da página */
+  width: 100%;
+  height: 100vh;
+  background-color: #00000000;    /* fundo do canvas visível */
+    canvas{
+        position: absolute;
+        top: 0;
+
+    }
+  /* você pode adicionar margin, padding, z-index etc */
+}
