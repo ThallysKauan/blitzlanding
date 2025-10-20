@@ -1,22 +1,23 @@
-import React from "react";
-import "./Principal.scss"
-import {gsap} from "gsap";
+import React, { forwardRef, useRef, useImperativeHandle } from "react";
+import "./Principal.scss";
 import logo from "../../assets/imgs/logo.png";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+const Principal = forwardRef((props, ref) => {
+  const containerRef = useRef();
+  const partOneRef = useRef();
 
-function Principal() {
+  useImperativeHandle(ref, () => ({
+    container: containerRef.current,
+    partOne: partOneRef.current
+  }));
 
-
-    return(
-        <>
-            <div className="container_conteudo">
-                <div className="part_one">
-                    <img className="image_test" src={logo} alt="" />
-                </div>
-            </div>
-        </>
-    );
-}
+  return (
+    <div ref={containerRef} className="container_conteudo">
+      <div ref={partOneRef} className="part_one">
+        <img className="image_test" src={logo} alt="" />
+      </div>
+    </div>
+  );
+});
 
 export default Principal;
