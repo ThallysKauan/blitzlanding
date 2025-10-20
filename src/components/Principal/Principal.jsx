@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef, useImperativeHandle } from "react";
-import "./Principal.scss";
+import "./Principal.css";
 import logo from "../../assets/imgs/logo.png";
 
 const Principal = forwardRef((props, ref) => {

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.cena1 {
+  position: absolute; /* mantém o canvas dentro do fluxo da página */
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0); /* fundo do canvas visível */
+  /* você pode adicionar margin, padding, z-index etc */
+}
+.cena1 canvas {
+  position: absolute;
+  top: 0;
+}/*# sourceMappingURL=Threescene.css.map */

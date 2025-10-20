@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import "./Headline.scss";
+import "./Headline.css";
 import ThreeScene from "../ThreeScene/ThreeScene";
 import arrow from "../../assets/imgs/arrow.png";
 

@@ -1,0 +1,105 @@
+.navbar_desktop {
+  display: block;
+}
+@media (max-width: 768px) {
+  .navbar_desktop {
+    display: none;
+  }
+}
+.navbar_desktop .nav_container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 100px;
+  align-items: center;
+  border: 1px solid red;
+}
+.navbar_desktop .nav_container ul {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+.navbar_desktop .nav_container ul li {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.navbar_desktop .nav_container ul li a {
+  font-family: "PP Neue Montreal Medium", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fafbfd;
+}
+.navbar_desktop .nav_container ul li.active {
+  border: 0.1rem solid rgb(55, 55, 55);
+}
+.navbar_desktop .nav_container .buttons_cta a {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PP Neue Montreal bold", sans-serif;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.navbar_mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar_mobile {
+    display: block;
+  }
+}
+.navbar_mobile .container_mobile {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px 30px 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_mobile .container_mobile .logo_image_side img {
+  width: 80px;
+}
+.navbar_mobile .container_mobile .right_side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar_mobile .container_mobile .right_side a {
+  padding: 10px 30px;
+  color: #02030e;
+  font-family: "PP Neue Montreal bold", sans-serif;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.navbar_mobile .container_mobile .right_side .hamburguer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 5px;
+}
+.navbar_mobile .container_mobile .right_side .hamburguer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(255, 255, 255);
+  width: 20px;
+}
+.navbar_mobile .container_mobile .right_side .hamburguer span:last-child {
+  width: 10px;
+}/*# sourceMappingURL=Navbar.css.map */

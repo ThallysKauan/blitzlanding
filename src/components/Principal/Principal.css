@@ -1,0 +1,22 @@
+.container_conteudo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  opacity: 0;
+}
+.container_conteudo .part_one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(78, 53, 53, 0);
+}
+.container_conteudo .part_one img {
+  width: 40vw;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}/*# sourceMappingURL=Principal.css.map */
